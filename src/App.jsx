@@ -1,21 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "../src/components/header";
-import SideBar from "./components/sideBar";
-import PageNotFound from "./pages/pageNotFound";
-import Home from "./pages/home";
+import PageNotFound from "./pages/PageNotFound";
+import Home from "./pages/Home";
+import TicTacToe from "./pages/TicTacToe";
+import Weather from "./pages/Weather";
 function App() {
   return (
     <>
-      <Header />
-      <div>
-        <SideBar />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="tictactoe" element={<TicTacToe />} />
+          <Route path="weather" element={<Weather />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
