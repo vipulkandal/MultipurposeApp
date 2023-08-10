@@ -9,6 +9,7 @@ import { TiWeatherPartlySunny } from "react-icons/ti";
 import "./style.scss";
 
 const SideBar = () => {
+  // test
   return (
     <div className="sidebar">
       <p
