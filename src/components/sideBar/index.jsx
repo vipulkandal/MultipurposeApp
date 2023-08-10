@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import { BsFillCalculatorFill } from "react-icons/bs";
 import { TbGoGame } from "react-icons/tb";
 import { PiNotepadFill } from "react-icons/pi";
@@ -9,7 +11,11 @@ import "./style.scss";
 const SideBar = () => {
   return (
     <div className="sidebar">
-      <p className="sidebar__element">
+      <p
+        className="sidebar__element"
+        onClick={(e) => console.log(e.target.value)}
+        value="calc"
+      >
         <span>
           <BsFillCalculatorFill />
         </span>

@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 
 const Weather = () => {
-  return <div className="weather">Weather</div>;
+  return <h1 className="weather">Weather</h1>;
 };
 
 export default Weather;

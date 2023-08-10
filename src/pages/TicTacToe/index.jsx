@@ -3,11 +3,7 @@ import "./style.scss";
 import Layout from "../../components/Layout";
 
 const TicTacToe = () => {
-  return (
-    <Layout>
-      <div className="tictactoe">TicTacToe</div>
-    </Layout>
-  );
+  return <h1 className="tictactoe">TicTacToe</h1>;
 };
 
 export default TicTacToe;
