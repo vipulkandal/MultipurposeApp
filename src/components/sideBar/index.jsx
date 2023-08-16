@@ -10,6 +10,7 @@ import "./style.scss";
 
 const SideBar = () => {
   // test
+  // test 2
   return (
     <div className="sidebar">
       <p
